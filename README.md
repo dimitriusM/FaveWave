@@ -53,6 +53,14 @@ This is a simple implementation of an online radio for Raspberry Pi. While there
 9. Add `www-data` user to `audio` group:
    ```bash
    sudo usermod -a -G audio www-data
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+Thanks to the open-source community for inspiring and supporting this project!
+   
    ```
 
    
