@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="960" height="240" role="img" aria-label="Glowing analog radio dial">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020403"/>
+      <stop offset="0.55" stop-color="#07110d"/>
+      <stop offset="1" stop-color="#010202"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#1c6b4a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#1c6b4a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="needle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3b12" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff7a1a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#e02a0a" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="needleGlow" x="-150%" y="-20%" width="400%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="240" fill="url(#bg)"/>
+  <ellipse cx="480" cy="120" rx="560" ry="90" fill="url(#haze)"/>
+
+  <g filter="url(#glow)" fill="#9dffc8" stroke="#9dffc8" font-family="'DIN Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" text-anchor="middle">
+    <!-- scale lines -->
+    <path d="M0 122 Q480 104 960 122" fill="none" stroke-width="3.5"/>
+    <path d="M0 136 Q480 118 960 136" fill="none" stroke-width="3.5"/>
+
+    <!-- FM ticks and labels -->
+    <g stroke-width="0" font-size="44" font-weight="500">
+      <text x="80" y="98">88</text>
+      <text x="157" y="96">90</text>
+      <text x="234" y="94">92</text>
+      <text x="311" y="93">94</text>
+      <text x="388" y="92">96</text>
+      <text x="465" y="91">98</text>
+      <text x="542" y="91">100</text>
+      <text x="619" y="92">102</text>
+      <text x="696" y="93">104</text>
+      <text x="773" y="94">106</text>
+      <text x="850" y="96">108</text>
+      <text x="922" y="97" font-size="22">MHz</text>
+    </g>
+    <g stroke-width="0">
+      <rect x="71" y="108" width="18" height="8"/>
+      <rect x="148" y="106" width="18" height="8"/>
+      <rect x="225" y="105" width="18" height="8"/>
+      <rect x="302" y="104" width="18" height="8"/>
+      <rect x="379" y="103" width="18" height="8"/>
+      <rect x="456" y="102" width="18" height="8"/>
+      <rect x="533" y="102" width="18" height="8"/>
+      <rect x="610" y="103" width="18" height="8"/>
+      <rect x="687" y="104" width="18" height="8"/>
+      <rect x="764" y="105" width="18" height="8"/>
+      <rect x="841" y="106" width="18" height="8"/>
+    </g>
+
+    <!-- AM ticks and labels -->
+    <g stroke-width="0">
+      <rect x="102" y="140" width="16" height="7"/>
+      <rect x="182" y="138" width="16" height="7"/>
+      <rect x="312" y="135" width="16" height="7"/>
+      <rect x="407" y="134" width="16" height="7"/>
+      <rect x="552" y="134" width="16" height="7"/>
+      <rect x="657" y="135" width="16" height="7"/>
+      <rect x="752" y="137" width="16" height="7"/>
+      <rect x="837" y="139" width="16" height="7"/>
+    </g>
+    <g stroke-width="0" font-size="32" font-weight="500">
+      <text x="110" y="180">550</text>
+      <text x="190" y="178">600</text>
+      <text x="320" y="175">700</text>
+      <text x="415" y="174">800</text>
+      <text x="560" y="174">1000</text>
+      <text x="665" y="175">1200</text>
+      <text x="760" y="177">1400</text>
+      <text x="845" y="179">1600</text>
+      <text x="922" y="180" font-size="20">kHz</text>
+    </g>
+  </g>
+
+  <!-- tuning needle -->
+  <rect x="498" y="0" width="48" height="205" fill="#ff5a14" opacity="0.55" filter="url(#needleGlow)"/>
+  <rect x="498" y="0" width="48" height="205" fill="url(#needle)" opacity="0.82"/>
+  <rect x="520" y="0" width="3" height="205" fill="#ffd9b0" opacity="0.55"/>
+</svg>
