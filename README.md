@@ -1,4 +1,4 @@
-# RadioGaGa
+# FaveWave
 
 A tiny internet radio for the Raspberry Pi, with a web page to switch stations from your phone.
 
@@ -46,17 +46,17 @@ The guide assumes your user is `pi` and the files live in `/home/pi/radio`. If y
 3. Get the code:
    ```bash
    cd ~
-   git clone https://github.com/dimitriusM/RadioGaGa.git
+   git clone https://github.com/dimitriusM/FaveWave.git
    ```
 
 4. Copy the scripts and the station list to your home directory:
    ```bash
-   cp -r ~/RadioGaGa/radio /home/pi/radio
+   cp -r ~/FaveWave/radio /home/pi/radio
    ```
 
 5. Copy the web page to the web server:
    ```bash
-   sudo cp -r ~/RadioGaGa/html /var/www/html/radio
+   sudo cp -r ~/FaveWave/html /var/www/html/radio
    ```
 
 6. Let the web server change the active station:

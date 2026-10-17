@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Radio Ga Ga</title>
+    <title>FaveWave</title>
    
     <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
     
